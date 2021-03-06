@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="帅哥" onclick="myfn(1)">
+<input type="button" value="美女" onclick="myfn(2)">
+<input type="text" placeholder="请输入个数" id="i1">
+<div id="d1"></div>
+
+<script>
+    //开启只执行一次的定时器
+    // setInterval(function () {
+    //     alert("时间到!");
+    // },3000);
+    function myfn(x) {
+        //根据点击的按钮 得到对应的图片名
+        let imgName = x==1? "a.jpeg":"b.jpeg"
+        let count = 0;
+        //开启定时器
+        let timer = setInterval(function () {
+            d1.innerHTML+="<img src='"+imgName+"'>"
+            count++;
+            if (count==i1.value){
+                clearInterval(timer)
+            }
+        },500);
+
+    }
+</script>
+</body>
+</html>

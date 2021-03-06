@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <select>
+        <option value="0">武汉</option>
+        <option value="1">台湾</option>
+        <option value="2">上海</option>
+    </select>
+    <select>
+        <option>请选择</option>
+    </select>
+    <script src="../js/jquery-1.4.2.js"></script>
+    <script>
+        let arr = [["武昌","汉口","汉阳"],
+        ["台北","高雄","桃园"],
+        ["浦东","虹桥","二环"]]
+        $("select:first").change(function () {
+            $("select:first").html("<option>请选择</option>")
+            let cities = arr[this.value];
+            // alert(cities);
+            for (let i = 0; i < cities.length; i++) {
+                o.text(cityName);
+                //把option添加到第二个下拉选
+                $("select:last").append(0);
+            }
+        })
+    </script>
+</body>
+</html>

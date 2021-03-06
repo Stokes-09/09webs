@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #center02_a2,.l1{width: 820px; height: 340px;}
+        #center02_a2{
+            position: relative;/*做参照物*/
+            overflow: hidden;
+        }
+        #center02_a2>.l1{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div id="center02_a2">
+    <img class="l1" src="a.png" alt="">
+    <img class="l1" src="b.jpg" alt="">
+    <img class="l1" src="c.jpg" alt="">
+    <img class="l1" src="d.jpg" alt="">
+    <img class="l1" src="e.jpg" alt="">
+</div>
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    //得到所有图片并遍历
+    $(".l1").each(function (i) {
+        //0*200   1*200    2*200  400
+        $(this).css("left",i*820+"px");
+    })
+    function change(){
+        //开启移动图片的定时器
+    let timer = setInterval(function () {
+            //得到所有图片遍历
+            $(".l1").each(function () {
+                //得到left
+                let left = parseInt($(this).css("left"));
+                left-=10;
+                if (left <=-820){
+                    left=3280;
+                    //停止定时器
+                    clearInterval(timer)
+                }
+                //把变小的left赋值回去
+                $(this).css("left",left+"px");
+            })
+        },10)
+    }
+    //开启定时器每隔两秒换一张图片
+    let changeTimer = setInterval(change,5000);
+    //鼠标移入事件
+    $("#center02_a2").mouseover(function () {
+        clearInterval(changeTimer);
+    });
+    // 鼠标移出事件
+    $("#center02_a2").mouseout(function () {
+        changeTimer = setInterval(change,2000);
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" onkeydown="downfn()" onkeyup="upfn()">
+
+<script>
+    function downfn() {
+        console.log("键盘按下 按键编码"+event.keyCode);
+    }
+    function upfn() {
+        //按键编码转成字符
+        console.log("键盘抬起"+String.fromCharCode(event.keyCode));
+    }
+
+</script>
+</body>
+</html>

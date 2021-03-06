@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #top_div{
+            width: 100%;
+            height: 50px;
+            background-image: url("https://jx3.xoyo.com/assets/2018/11/26/assets/images/jx3_top_bg.jpg");
+            position: relative;
+        }
+        #top_div>img{
+            width: 70px;
+            height: 38px;
+            vertical-align: top;
+            border: none;
+            padding: 8px 0 0;
+            left: 200px;
+            position: absolute;
+        }
+        .d1{
+            position: absolute;
+            left: 280px;
+            top: 15px;
+            margin: 0;
+            padding: 0 0 0 10px;
+            width: 395px;
+            height: 50px;
+            line-height: 50px;
+            text-align: left;
+            display: block;
+            overflow: hidden;
+            background-image: url("https://jx3.xoyo.com/assets/website/2019/06/06/slogan/slogan.png") ;
+            background-repeat: no-repeat;
+        }
+        .d2{
+            float: right;
+            margin: 0;
+            padding: 0;
+            width: 720px;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+        }
+        .d2>a{
+            float: right;
+            padding: 0 12px;
+            height: 50px;
+            margin: 0;
+            color: #bdbebe;
+            text-decoration: none;
+        }
+        #center01{
+            width: 100%;
+            height: 43.5px;
+            background-image: url("https://jx3.xoyo.com/assets/2018/11/26/assets/images/top_nav_bg_2560.jpg");
+            background-position: center;
+            position: relative;
+        }
+        #center01>.d3{
+            width: 80%;
+            height: 43.5px;
+            left: 20%;
+            top: 10px;
+            position: absolute;
+        }
+        .d3>a{
+            color: #bdbebe;
+            padding: 0 12px;
+            margin: 0;
+            text-decoration: none;
+        }
+        .d3>span{
+            color: white;
+            padding: 0 10px;
+        }
+        #center02{
+            width: 100%;
+            height: 1000px;
+            background-image: url("js3.jpg");
+            background-size: 100% 1000px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        #center02>img{
+            width: 100%;
+            height: 1000px;
+        }
+        #center02_a1{
+            width: 550px;
+            height: 450px;
+            position: absolute;
+            right: 160px;
+            bottom: 70px;
+        }
+        #center02>.video-player-link{
+            width: 190px;
+            height: 190px;
+            position: absolute;
+            right: 45%;
+            bottom: 45%;
+            background-size: auto 100%;
+            background-image: url("https://jx3.xoyo.com/assets/2018/11/26/assets/images/video-btn-0128.png");
+        }
+        #center02_a2,.l1{width: 820px; height: 340px;}
+        #center02_a2{
+            position: absolute;/*做参照物*/
+            overflow: hidden;
+            bottom: 120px;left: 70px;
+        }
+        #center02_a2>.l1{
+            position: absolute;
+        }
+        #center02>#center02_a1>.c1>a{
+            position: absolute;
+            width: 1.91667rem;
+            height: 0.875rem;
+            top: 20px;
+            left: 20px;
+            background-size: cover;
+        }
+        #center02>#center02_a1>.c2>a{
+            position: absolute;
+            width: 1.91667rem;
+            height: 0.875rem;
+            top: 20px;
+            right: 125px;
+            background-size: cover;
+        }
+        #center02>#center02_a1>.c3>a{
+            position: absolute;
+            width: 1.91667rem;
+            height: 0.875rem;
+            top: 107px;
+            right: 125px;
+            background-size: cover;
+        }
+        #center02>#center02_a1>.c4>a{
+            position: absolute;
+            bottom: 42px;
+            left: 20px;
+            background-size: cover;
+        }
+        #center03{
+            width: 100%;
+            height: 1150px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        #center03_a1{
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            left: 100px;
+            top: 50px;
+        }
+        #center03_a1_b1{
+            width: 1000px;
+            height:50px;
+            left: 100px;
+            position: absolute;
+        }
+        #center03_a1_b1_c1{
+            float: left;
+            list-style: none;
+            margin: 12px 0 0 0;
+            padding: 0;
+        }
+        .center03_a1_b1_e2{
+            padding: 0 12px;
+        }
+        #center03_a1_b1_e1{
+            border: 2px solid #62b5ec;
+            background-color: #62b5ec;
+        }
+        #center03_a1_b1_e3{
+            font-size: 23px;
+            margin-left: 5px;
+            color: #62b5ec;
+        }
+        #center03_a1_b1_c2{
+            float: right;
+            margin-right: 30px;
+            list-style: none;
+        }
+
+        #center03_a1_b2{
+            float: left;
+            width: 1000px;
+            height: 500px;
+            left: 100px;
+            top: 60px;
+            position: absolute;
+        }
+        #center03_a1_b2>ul>a{
+            float: left;
+            width: 220px;
+            height: 300px;
+            padding: 0 15px;
+            margin: 0;
+            text-decoration: none;
+        }
+        #center03_a1_b2>ul>a>li{
+            width: 220px;
+            height: 250px;
+        }
+        #center03_a1_b2>ul{
+            width: 100%;
+            height: 400px;
+            list-style: none;
+            margin:0;
+            padding: 0;
+        }
+        #center03_a1_b2>ul>a>li>div>img{
+            width: 200px;
+            height: 200px;
+            transition-duration: 1s;
+        }
+        #center03_a1_b2>ul>a>li>div>img:hover{
+            transform: scale(1.1);
+        }
+        .center03_a1_b2_e3{
+            width: 200px;
+            float: left;
+            color: #bdbebe;
+        }
+        .center03_a1_b2_e1{
+            width: 200px;
+        }
+        .link{
+            float: right;
+            color: white;
+            font-size: 2px;
+            border: 1px solid #bdbebe;
+            background-color: #bdbebe;
+            border-radius: 2px;
+        }
+        .center03_a1_b2_e2{
+            width: 200px;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+        #center03_a2{
+            position: absolute;
+            width: 500px;
+            height: 350px;
+            right: 90px;
+            top: 70px;
+            display: block;
+        }
+        #center03_a3{
+            width: 100%;
+            height: 300px;
+            top: 500px;
+            position: absolute;
+        }
+        #center03_a3_b1{
+            width: 1000px;
+            height: 300px;
+            left: 200px;
+            padding: 0 20px;
+            position: absolute;
+        }
+        #center03_a3_b1>span{
+            display: block;
+            float: left;
+            margin: 0 60px 0 0;
+        }
+        #center03_a3_b2{
+            width: 600px;
+            height: 300px;
+            right: 0;
+            position: absolute;
+        }
+        #center03_a3_b2_c1{
+            margin: 0 0 20px 0;
+        }
+        #center03_a3_b2_c1>span>img{
+            margin: 0 15px 0 0;
+            transition-duration: 1s;
+        }
+        #center03_a3_b2_c2>span>img{
+            margin: 0 15px 0 0;
+            transition-duration: 1s;
+        }
+        #center03_a3_b2>div>span>img:hover{
+            transform: scale(1.1);
+        }
+        #center03_a4{
+            width: 100%;
+            height: 250px;
+            bottom: 0;
+
+            position: absolute;
+            text-align: center;
+        }
+        #center04_a1_b1{
+            width: 1600px;
+            height:50px;
+            left: 200px;
+            position: absolute;
+        }
+        #center04_a1_b1_c1{
+            float: left;
+            list-style: none;
+            margin: 12px 0 0 0;
+            padding: 0;
+        }
+        .center04_a1_b1_e2{
+            padding: 0 12px;
+        }
+        #center04{
+            width: 100%;
+            height: 400px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        #center04_a1_b1_e1 {
+            border: 2px solid #62b5ec;
+            background-color: #62b5ec;
+        }
+        #center04_a1_b1_e3{
+            font-size: 23px;
+            margin-left: 5px;
+            color: #62b5ec;
+        }
+        #center04_a1_b1_c2{
+            float: right;
+            margin-right: 30px;
+            list-style: none;
+        }
+        #center04_a1_b2{
+            width: 1600px;
+            height: 300px;
+            position: absolute;
+            list-style: none;
+            left: 200px;
+            top: 60px;
+
+        }
+        #center04_a1_b2>ul>a>li{
+            width: 300px;
+            height: 250px;
+            list-style: none;
+        }
+        #center04_a1_b2>ul>a{
+            float: left;
+            width: 220px;
+            height: 300px;
+            padding: 0 15px;
+            margin: 0 10px 0 0;
+            text-decoration: none;
+        }
+        .center04_a1_b2_e3{
+            width: 200px;
+            color: #bdbebe;
+            float: left;
+        }
+        .center04_a1_b2_e1{
+            width: 200px;
+        }
+        .center04_a1_b2_e2 {
+            width: 200px;
+            text-align: center;
+            color: black;
+        }
+        #center04_a1_b2>ul>a>li>div>img{
+            width: 200px;
+            height: 200px;
+            transition-duration: 1s;
+        }
+        #center04_a1_b2>ul>a>li>div>img:hover{
+            transform: scale(1.1);
+        }
+        #center05{
+            width: 100%;
+            height: 760px;
+            background-image: url("ss.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 760px;
+            position: relative;
+        }
+        #center05_a1_b1{
+            width: 1600px;
+            height:50px;
+            top: 30px;
+            left: 200px;
+            position: absolute;
+        }
+        #center05_a1_b1_c1{
+            float: left;
+            list-style: none;
+            margin: 12px 0 0 0;
+            padding: 0;
+        }
+        #center05_a1_b1_e1 {
+            border: 2px solid #0aa1ed;
+            background-color: #0aa1ed;
+        }
+        #center05_a1_b1_e3{
+            font-size: 23px;
+            margin-left: 5px;
+            color: #0aa1ed;
+        }
+        #center05_a1_b1_c2{
+            float: right;
+            margin-right: 30px;
+            list-style: none;
+        }
+        #center06{
+            width: 100%;
+            height: 394px;
+            background-image:url("cn07.png") ;
+            background-size: 100% 394px;
+        }
+        #bottom{
+            width: 100%;
+            height: 300px;
+            background-color: #222222;
+            border: 1px solid #222222;
+            text-align: center;
+            position: relative;
+            padding-top: 80px;
+        }
+        #bottom>div{
+            font-size: 15px;
+            font-weight: bold;
+            color: #E8E8E8;
+        }
+    </style>
+
+</head>
+<body>
+<div id="start">
+    <div id="top_div">
+        <div class="d1"></div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAAlCAYAAAAHrmSHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDozZjMwMTFlYS1iMGJlLTRmZjAtODE1Yi0yNmYyYjk2MTk0ZDIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUZBNjFGMTJFQkNFMTFFODg4MkRDODk2REUxNzBFRTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUZBNjFGMTFFQkNFMTFFODg4MkRDODk2REUxNzBFRTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OGRjYjIzZTYtODBkNS00MTVlLTkzNmMtZjQ2YTQ2MjY4ZDNkIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZjExNjEzN2QtYTE4Ni0xMTdiLWE5MTEtZWY1NTYwY2RiNTkwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+e3tNXAAACiNJREFUeNrMWgtwVcUZ3r0kgAkQqdRni0HiaIvKVAGRUh8g6ogWyXWKTxSqtoj4oMVBaZ1Opzq+cBAt0kLVShsV5EYwI6Oo+CgqiYAOLS8xikkQ1GgirwjJOf3+3f/cu2fvnuTe5DLJmflm9/67e87uf/73ufLjQZeKHF0SGA0UAjXABuBgawt8o032pYOmIENzfBFGcp5jzA+NyRDtnA9fzPqgMZG7Kw+YCtAu1gINwAvAKBezAnjmgaRFU32pEMzxpB737HmOsSTUmOR7hentuXLJNJKqa4G9/LsAiAOvA7O6GrOCNe2Vjlxe+UBPh2RNR3NvlmqYhznNuVJDe41n3I+uFadf1hO/x2Fd/dh15a+1aodyaNPouhV41GGzPgVOyJBZv8KcX6NPh5gF/OdQMMugHwbMxLo70PYG3gO9Gu1AYAPwNtZUxNeWNxwKpvUCtgFHWQaeml9iIxUZGPhj0K8FYjzvPTQjDhGzCBdg3TxmUNozjDUNGLsH7fwJH5QfzKVN+43PDLNs1mZgRYY2Kx+IGfNaOmqzWhhemv2TfwZWoD/QfoZjzeHozwWG5Mym4XB90NwSYbN+AvwD3dvVG4sOHehtH7TUcH8WktUN9J+iLQEG44AktQXAdtCfRFttSHY34FjQYw7JalKmIV2yfaxt6jDTDDUjKSu2mOUBzeh2R3sdHjgW7b34PRdzPGtDJ7Eavm5t9kAbzOoHXA56KdrhZJM8/dwqoB70i3neFKw7l20U3acF7SJgADEQa/6LtlJBiq1oaV0CyE8yWorya6oS69vNNMtmHYZmhsPAP4b2RDzwYv7dD3Omov9XZmgwr7s6gBQTHVK1x8EskhI69B9BvxNtL5aSGrSzgTLQP+a527GuPx/+DNA3GPd+C2tGw8C7jlhRNmT8G1h7Ib9EktI/tCvkiIjgKTb7oWXgSQ2foI0ZakjhwxxSQeBskN9mhsxH+wNgM7emZO0xmJUH/A0oBP0FtBXAaBy8jqViOegS7UjNVEkH3c33KUf7tMspRF2wlb2MvSy4riqxKSumtZLukJTMcHjD9yn0wRxyDEuBhSz+34A+Xh1SipvRHglM8jUDyfbtsCRrT0gVpZjM/UIc/FJimrKFUoU0ZL9WYt1QnjMd9G7c3xjlQV3XoqGldI+zeC69qEcyDm4zyA0paC1xhA4X+Sm7RnEQZQnf8GYn8Ng8gyFnA+dh7N+WzWo0DrgTqMPBj9Nqp+iFaLcAH2LdzzgeHMrzB2jjrZj1iR8R59nXM0NLh4G+DNgHXDWpKvFSRhlBhok0eae720ikKaQhm3YKxk5mb1gGTLDUEB5L/gt9adHrDZU6ydcMIzpJGTHiKawj+0Ze82bQzzHWL8OaK7hf647zpMms40GjWGwimwJ6zpMLh5WuQncJacyNlQkvLbjNsupAdiXeRtWhSUuP+L22c4rWw9dSV2CoIUX9vwCKOJAM7nMFdvk89+8E/QHuQ50lSSfZqvGgr0N7usHg5WgvU3ZUhxWnJT1nyhsGTuVUgLKBK5PeUqbzgvd4yW8rE42xdibS9IB4K4m0D/pC4ATQbgAajDnfg77aCkrrOZD0rKD0SyPAHMxBqQfE0V8P2niePxbYYQSlW0DvA8T4/vu9YO/03NSeZwPPAb2Ah0G/AJjJTskOmEfivAt1Upx9PasEc55wSFaNcs1aRR7Qqqve8kA2+N+q7EDf5x1gjKGGu7i/2zLWDYZ0/Chp1KX4mtWT7FgT1vxcBat6jcfOaauxdn9EGnY7bJZtnVb+fVjpbPb0U8P8kPHHz4wfG8uyRFMIjr+E8SJLsppBrwH6gvYBMJOML/AtsA30d/GGN+E+lPz2UG9ViLVG+vJRRLqzO3g++n2Z/j/0bwEux/xqoCf68401U4DFWvqSkrUnKg1zXTdVJug803Dely0ekM0dFMuynnUbcLKjnkXML6CDAAN4UwNAX26pYTFvdj9wIfrP4NClwDxHbkjYa9B78z3imD8HWIP+LNDrgX4emQQh/gk8jXVX4blLDTUscOWmrcVpU9YkcD95v2d4cz63n5dFWZlU4Z6IEg2p4TEq8BTiCDbw5NXONebsAJ1Sqe95A/U6vbLvJU313Gc+w0sFuc9j7AY2A+Q83gTuw9qVxr2qjLWRBr6NkKvGYbqq8/zMavBFVLpWni+6RPMdxpDDSYqhjmfPFIQI5N0uAb6IKNEEz+9h0RsdQSnZq4f591QN6drz1XboIoTby0dmBTiHZecp2K6NZVBWJj1+SnnC1Jiv7AhSIqNEA4Msm/F7Mo8HarAO/TFQp/4RJZqU+kq2W3red5ada+Sxd1P7UzarBPT++N2fy0olwF3A3fwc8oR7Hd4wyYxISaN4MGy6Xrnj/aUH8vy2v+5M02XgUOVhEifGxXjLQfS/WVUckKdxDqi8pKfX3upTFQN2LEINg35fY4NfWGNNLHlVlmRt4xSKTMFDvq78mmdYYldKhCO4ta9Hh8dJW270wzFsmfqw0sYHi/NBmxgUBoG9yitJUcYGfrGxdiToS7hgRxKSAGagfz9ofzLiLFOy7OJfX0Oy6qy9bcW6VXjuQUdRch/wMugTPP1iPmHmUwjzuClZtpOja+6Z8VBmNGd4nJzOYqoTmiEVVT9UnOZFf7Cg+GqaKqmkSr6wS3K18eaqmX44OwKT8aO4zhW81S1R+Z+xpsgYq7Ui+LdU/T6yKJk8w6sAxYrrlYRL8aXTybFzAcMuwpyNkKyd7DCOFjrVG2IJ333ToZrh4DZ8kHwuLI7lMaiAHMfVgu4qG0CkD/qoiBp8HacdcACSCnyfceAbxazg+UXG+OeWGi5og1km6jB2pEieRR6B9iuhz0U5MI0Nohqe0C/iRDqbUMVKMYa/d5gXVW0WJBN2z+0NqeQyWUfX8kX0b+J8kWpMr4A+IuLglao4qEs0fgaSZY/1MSSrpvUPKW5vaNssX/sSYkyxI+uhPZL0UMbyFwez6NoFXAkpa0kxLf3BPbVbl2t8Kk0L8RpXSgVXKkY4Dt7AFQKkV7K5HcwKDtnboH/eQWaZZXf64l/sSBHJYQ0TGq5rBzAGDPssVBpKP4hKxj/S3wK5Rp86yEZPV0N7G3TS/9uw7usOMCug54fVs0PMMuPOGVz3G2x5w9Yu+mfANWDYzrR6mheulP7Y13Wr3ynRTf9uSBH6XaA/yJXYR7CuIij2dYBZAVYZ/e05YJb5sZoM+/Wshke1wqzVwENg1rLIL+zvDB4XPEhyAe5ZPOxA2weXIgeS5cIuLlP3ywGzhEOyutGfhYRmIn317w6Qh90CrLJV0flfDuOA9B1wUfClqBOYFYzVCLuCmxtmBRcZ9DcYAkzK/g8wXqrWTnGK14nMCg7ZyHvJNbNy958yT5eDKaL2O5lZATYpG9QFmZVkWovx4baTmRWM1YrwXwi6DLMc3rPTmRXQm4NUrasxy5ERdDqzgj0sJm/WFZkVXP8XYACM9MYVKhRvFQAAAABJRU5ErkJggg==" alt="">
+        <div class="d2">
+            <a href="#">增值服务</a>
+            <a href="#">客服</a>
+            <a href="#">老玩家回归指南</a>
+            <a href="#">充值</a>
+            <a href="#">注册</a>
+            <a href="#">登录</a>
+        </div>
+    </div>
+    <div id="center01">
+        <div class="d3">
+            <span>|</span>
+            <a href="#">官方首页</a><span>|</span>
+            <a href="#">新闻/活动</a><span>|</span>
+            <a href="#">视频/直播</a><span>|</span>
+            <a href="#">同人站</a><span>|</span>
+            <a href="#">下载游戏</a><span>|</span>
+            <a href="#">剑网3推栏</a><span>|</span>
+            <a href="#">玲珑密保锁</a><span>|</span>
+            <a href="#">万宝楼</a><span>|</span>
+            <a href="#">家园蓝图</a><span>|</span>
+            <a href="#">客服</a><span>|</span>
+        </div>
+    </div>
+    <div id="center02">
+        <a class="video-player-link" href="https://static.jx3.xoyo.com/20201130zhouyexunhuan.mp4">
+            <img src="https://jx3.xoyo.com/assets/2018/11/26/assets/images/video-btn-0128.png" alt="">
+        </a>
+        <div id="center02_a1">
+            <div class="c1">
+                <a href="#"><img src="https://jx3.xoyo.com/assets/2018/11/26/assets/images/change/download_off.png?pc_hash=UT8DRU"
+                                 onmouseover="this.src='https://jx3.xoyo.com/assets/2018/11/26/assets/images/change/download_on.png'"
+                                 onmouseout="this.src='https://jx3.xoyo.com/assets/2018/11/26/assets/images/change/download_off.png?pc_hash=UT8DRU'"></a>
+            </div>
+            <div class="c2">
+                <a href="#"><img src="https://jx3.xoyo.com/assets/2018/11/26/assets/images/change/reg_off.png"
+                                 onmouseover="this.src='https://jx3.xoyo.com/assets/2018/11/26/assets/images/change/reg_on.png'"
+                                 onmouseout="this.src='https://jx3.xoyo.com/assets/2018/11/26/assets/images/change/reg_off.png'"></a>
+            </div>
+            <div class="c3">
+                <a href="#"><img src="https://jx3.xoyo.com/assets/2018/11/26/assets/images/change/chg_off.png"
+                                 onmouseover="this.src='https://jx3.xoyo.com/assets/2018/11/26/assets/images/change/chg_on.png'"
+                                 onmouseout="this.src='https://jx3.xoyo.com/assets/2018/11/26/assets/images/change/chg_off.png'"></a>
+            </div>
+            <div class="c4">
+                <a href="#"><img src="https://jx3.xoyo.com/uploadfile/2021/0225/20210225013346325.jpg" alt=""></a>
+            </div>
+        </div>
+        <div id="center02_a2">
+            <img class="l1" src="a.png" alt="">
+            <img class="l1" src="b.jpg" alt="">
+            <img class="l1" src="c.jpg" alt="">
+            <img class="l1" src="d.jpg" alt="">
+            <img class="l1" src="e.jpg" alt="">
+        </div>
+    </div>
+    <div id="center03">
+        <div id="center03_a1">
+            <div id="center03_a1_b1">
+                <ul id="center03_a1_b1_c1">
+                    <li>
+                        <span id="center03_a1_b1_e1"></span>
+                        <span id="center03_a1_b1_e3">热门活动</span>
+                        <span class="center03_a1_b1_e2">正在进行</span>
+                        <span class="center03_a1_b1_e2">长期活动</span>
+                    </li>
+                </ul>
+                <ul id="center03_a1_b1_c2">
+                    <li>
+                        <span id="center03_a1_b1_e5"></span>
+                        <span id="center03_a1_b1_e6">更多</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="center03_a1_b2">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <div class="center03_a1_b2_e1">
+                                <img src="hd.png" alt="">
+                            </div>
+                            <div class="center03_a1_b2_e2">上元佳节新品献祥瑞</div>
+                            <div class="center03_a1_b2_e3">
+                                0.2-25
+                                <div class="link">前往></div>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div class="center03_a1_b2_e1">
+                                <img src="fl.png" alt="">
+                            </div>
+                            <div class="center03_a1_b2_e2">通宝送祝福</div>
+                            <div class="center03_a1_b2_e3">
+                                0.2-25
+                                <div class="link">前往></div>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div class="center03_a1_b2_e1">
+                                <img src="hg.png" alt="">
+                            </div>
+                            <div class="center03_a1_b2_e2">"金牛闹春"豪礼贺岁</div>
+                            <div class="center03_a1_b2_e3">
+                                0.2-25
+                                <div class="link">前往></div>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div class="center03_a1_b2_e1">
+                                <img src="gz.jpg" alt="">
+                            </div>
+                            <div class="center03_a1_b2_e2">萌宠毛绒周边上架</div>
+                            <div class="center03_a1_b2_e3">
+                                0.2-25
+                                <div class="link">前往></div>
+                            </div>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="center03_a2">
+            <img src="zx.png" alt="">
+        </div>
+        <div id="center03_a3">
+            <div id="center03_a3_b1">
+                <span><img src="lm.jpg" alt=""></span>
+                <span><img src="gb.jpg" alt=""></span>
+            </div>
+            <div id="center03_a3_b2">
+                <div id="center03_a3_b2_c1">
+                    <span>
+                    <img src="theater.jpg" alt="">
+                    <img src="safe.jpg" alt="">
+                    </span>
+                </div>
+                <div id="center03_a3_b2_c2">
+                    <span>
+                    <img src="service.jpg" alt="">
+                    <img src="old.jpg" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="center03_a4">
+                <img src="https://jx3.xoyo.com/assets/2018/11/26/assets/images/qrcode/qrcode_index.png" alt="">
+        </div>
+    </div>
+    <div id="center04">
+        <div id="center04_a1_b1">
+            <ul id="center04_a1_b1_c1">
+                <li>
+                    <span id="center04_a1_b1_e1"></span>
+                    <span id="center04_a1_b1_e3">同人</span>
+                    <span class="center04_a1_b1_e2">漫画/插画</span>
+                    <span class="center04_a1_b1_e2">音乐/有声</span>
+                    <span class="center04_a1_b1_e2">视频/MMD</span>
+                    <span class="center04_a1_b1_e2">COSPLAY</span>
+                </li>
+            </ul>
+            <ul id="center04_a1_b1_c2">
+                <li>
+                    <span id="center04_a1_b1_e5"></span>
+                    <span id="center04_a1_b1_e6">更多</span>
+                </li>
+            </ul>
+        </div>
+        <div id="center04_a1_b2">
+            <ul>
+                <a href="#">
+                    <li>
+                        <div class="center04_a1_b2_e1">
+                            <img src="grz.jpg" alt="">
+                        </div>
+                        <div class="center04_a1_b2_e2">感染者</div>
+                        <div class="center04_a1_b2_e3">
+                            wjh
+                            <div class="link">前往></div>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="center04_a1_b2_e1">
+                            <img src="ns.jpg" alt="">
+                        </div>
+                        <div class="center04_a1_b2_e2">逆生</div>
+                        <div class="center04_a1_b2_e3">
+                            0.2-25
+                            <div class="link">前往></div>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="center04_a1_b2_e1">
+                            <img src="yoj.jpg" alt="">
+                        </div>
+                        <div class="center04_a1_b2_e2">Youth of JW3</div>
+                        <div class="center04_a1_b2_e3">
+                            wjh
+                            <div class="link">前往></div>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="center04_a1_b2_e1">
+                            <img src="qsrm.jpg" alt="">
+                        </div>
+                        <div class="center04_a1_b2_e2">青山如梦</div>
+                        <div class="center04_a1_b2_e3">
+                            wjh
+                            <div class="link">前往></div>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="center04_a1_b2_e1">
+                            <img src="dj.jpg" alt="">
+                        </div>
+                        <div class="center04_a1_b2_e2">毒</div>
+                        <div class="center04_a1_b2_e3">
+                            wjh
+                            <div class="link">前往></div>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="center04_a1_b2_e1">
+                            <img src="yl.jpg" alt="">
+                        </div>
+                        <div class="center04_a1_b2_e2">有莲</div>
+                        <div class="center04_a1_b2_e3">
+                            wjh
+                            <div class="link">前往></div>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div id="center05">
+        <div id="center05_a1_b1">
+            <ul id="center05_a1_b1_c1">
+                <li>
+                    <span id="center05_a1_b1_e1"></span>
+                    <span id="center05_a1_b1_e3">十六个门派</span>
+                    <span class="center04_a1_b1_e2">衍天宗</span>
+                    <span class="center04_a1_b1_e2">凌雪阁</span>
+                    <span class="center04_a1_b1_e2">蓬莱</span>
+                    <span class="center04_a1_b1_e2">纯阳</span>
+                    <span class="center04_a1_b1_e2">天策</span>
+                    <span class="center04_a1_b1_e2">藏剑</span>
+                    <span class="center04_a1_b1_e2">七秀</span>
+                    <span class="center04_a1_b1_e2">万花</span>
+                    <span class="center04_a1_b1_e2">丐帮</span>
+                    <span class="center04_a1_b1_e2">霸刀</span>
+                    <span class="center04_a1_b1_e2">唐门</span>
+                    <span class="center04_a1_b1_e2">长歌</span>
+                    <span class="center04_a1_b1_e2">苍云</span>
+                    <span class="center04_a1_b1_e2">少林</span>
+                    <span class="center04_a1_b1_e2">五毒</span>
+                    <span class="center04_a1_b1_e2">明教</span>
+                </li>
+            </ul>
+            <ul id="center05_a1_b1_c2">
+                <li>
+                    <span id="center05_a1_b1_e5"></span>
+                    <span id="center05_a1_b1_e6">更多</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="center06"></div>
+    <div id="bottom">
+        <img src="bot.png" alt="">
+        <div>制作人:Smile</div>
+    </div>
+</div>
+<script src="js/jquery-1.4.2.js"></script>
+<script>
+    //得到所有图片并遍历
+    $(".l1").each(function (i) {
+        //0*200   1*200    2*200  400
+        $(this).css("left",i*820+"px");
+    })
+    function change(){
+        //开启移动图片的定时器
+        let timer = setInterval(function () {
+            //得到所有图片遍历
+            $(".l1").each(function () {
+                //得到left
+                let left = parseInt($(this).css("left"));
+                left-=10;
+                if (left <=-820){
+                    left=3280;
+                    //停止定时器
+                    clearInterval(timer)
+                }
+                //把变小的left赋值回去
+                $(this).css("left",left+"px");
+            })
+        },10)
+    }
+    //开启定时器每隔两秒换一张图片
+    let changeTimer = setInterval(change,5000);
+    //鼠标移入事件
+    $("#center02_a2").mouseover(function () {
+        clearInterval(changeTimer);
+    });
+    // 鼠标移出事件
+    $("#center02_a2").mouseout(function () {
+        changeTimer = setInterval(change,2000);
+    })
+</script>
+</body>
+</html>

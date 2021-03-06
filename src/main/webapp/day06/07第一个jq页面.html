@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="i1">
+<input type="button" value="按钮" id="b1">
+<div id="d1"></div>
+<!--引入jQuery框架文件-->
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    //jQuery中动态绑定事件写法
+    $("#b1").click(function () {
+        //alert("按钮触发了")
+        $("d1").text($("#i1").val())
+        //等效下面的代码
+        let d1 = document.getElementById("d1");
+        let i1 = document.getElementById("i1");
+        d1.innerText = i1.value;
+    })
+</script>
+</body>
+</html>

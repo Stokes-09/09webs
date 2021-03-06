@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>同事们
+        <ul>
+            <li>马云</li>
+            <li>马化腾</li>
+            <li>许家印</li>
+        </ul>
+    </li>
+    <li>老乡们
+        <ul>
+            <li>习大大</li>
+            <li>李总理</li>
+            <li>周总理</li>
+        </ul>
+    </li>
+    <li>女友们
+        <ul>
+            <li>戚砚笛</li>
+            <li>杨超越</li>
+            <li>白鹿</li>
+        </ul>
+    </li>
+</ul>
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    //得到第二层的ul并让其隐藏
+    $("li>ul").hide();
+    //给第一层的li添加点击事件
+    $("body>ul>li").click(function () {
+    //this地代表触发事件的元素对象 this死js对象
+    $(this).children().toggle();
+    //点击到li的两个兄弟li里面的ul让其隐藏
+    $(this).siblings().children().hide();
+    })
+</script>
+</body>
+</html>

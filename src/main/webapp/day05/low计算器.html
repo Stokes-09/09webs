@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="i1">
+<input type="text" id="i2"><br>
+<input type="button" value="加" onclick="s(1)">
+<input type="button" value="减" onclick="s(2)">
+<input type="button" value="乘" onclick="s(3)">
+<input type="button" value="除" onclick="s(4)">
+<div id="d1"></div>
+
+<script>
+    function s(x) {
+        let a = document.getElementById("i1");
+        let b = document.getElementById("i2");
+        let num = document.getElementById("d1")
+        switch (x) {
+            case 1:
+                num.innerText = a.value*1+b.value*1;
+                break;
+            case 2:
+                num.innerText = a.value-b.value;
+                break;
+            case 3:
+                num.innerText = a.value*b.value;
+                break;
+            case 4:
+                num.innerText = a.value/b.value;
+                break;
+        }
+    }
+    function c() {
+        let a = document.getElementById("i1");
+        let b = document.getElementById("i2");
+        let num = document.getElementById("d1")
+        if (isNaN(a.value || b.value)){
+            num.innerText = "输入错误!"
+        }else{
+            num.innerText = a.value*b.value;
+        }
+    }
+    function q() {
+        let a = document.getElementById("i1");
+        let b = document.getElementById("i2");
+        let num = document.getElementById("d1")
+        if (isNaN(a.value || b.value)){
+            num.innerText = "输入错误!"
+        }else{
+            num.innerText = a.value-b.value;
+        }
+    }
+    function d() {
+        let a = document.getElementById("i1");
+        let b = document.getElementById("i2");
+        let num = document.getElementById("d1")
+        if (isNaN(a.value || b.value)){
+            num.innerText = "输入错误!"
+        }else{
+            num.innerText = a.value/b.value;
+        }
+    }
+    function j() {
+        let a = document.getElementById("i1");
+        let b = document.getElementById("i2");
+        let num = document.getElementById("d1")
+        if (isNaN(a.value || b.value)){
+            num.innerText = "输入错误!"
+        }else{
+            num.innerText = a.value*1+b.value*1;
+        }
+    }
+</script>
+</body>
+</html>
